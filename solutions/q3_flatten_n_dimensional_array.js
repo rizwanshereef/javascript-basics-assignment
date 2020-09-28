@@ -1,27 +1,19 @@
 /* Write a Program to Flatten a given n-dimensional array */
 
 const flatten = (input) => {
-	Array.prototype.flatten = (array) => {
-		const newAr = [];
-		const flat = (array) => {
-			array.map(i => {
-				Array.isArray(i) ? flat(i) : newAr.push(i)
-			})
-		}
-		flat(input);
-		return newAr;
-	};
-	const result = input.flatten();
-	console.log(result);
-	return result;
+    // Write your code here
+    if(Array.isArray(input)){
+        return input.reduce(function(arr,current){
+            let temp=Array.isArray(current)?flatten(current):[current];
+            return arr.concat(temp);
+        }, []);
+    }
+    else{
+        return null;
+    }
 };
-
-flatten([1, [2, 3], [[4], [5]]]);
-
 /* For example,
 INPUT - flatten([1, [2, 3], [[4], [5]])
 OUTPUT - [ 1, 2, 3, 4, 5 ]
-
 */
-
 module.exports = flatten;

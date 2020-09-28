@@ -6,11 +6,11 @@
 // Write your code here
 
 const fruitArray = [
-    { name: "apple", color: 'red',pricePerKg:126 },
-    { name: "orange", color: 'orange',pricePerKg:52 },
-    { name: "lemon", color: 'yellow',pricePerKg:35.5 },
-    { name: "mango", color: 'green',pricePerKg:70 },
-    { name: "grapes", color: 'black',pricePerKg:40.25 }
+    { name: "apple", color: 'red',pricePerKg:123 },
+    { name: "orange", color: 'orange',pricePerKg:63 },
+    { name: "lemon", color: 'yellow',pricePerKg:34.5 },
+    { name: "mango", color: 'green',pricePerKg:60 },
+    { name: "grapes", color: 'black',pricePerKg:25 }
     
   ];
 
